@@ -5,9 +5,8 @@ const Warning = React.lazy(() => import('./Warning'));
 
 function App() {
   const [count, setCount] = useState(0);
-
   return (
-    <div>
+    <main role="main">
       <h1>Hello world!!</h1>
       <h2 className={count > 5 ? 'warning' : null}>Count {count}</h2>
       <button onClick={() => setCount((count) => count + 1)}>+</button>
@@ -17,7 +16,7 @@ function App() {
           <Warning />
         </React.Suspense>
       ) : null}
-    </div>
+    </main>
   );
 }
 

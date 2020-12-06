@@ -23,5 +23,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', 'jsx-a11y'],
+  plugins: ['react', 'jsx-a11y', 'react-hooks'],
+  rules: {
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect
+  },
 };
