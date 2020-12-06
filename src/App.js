@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { hot } from "react-hot-loader";
+import React, { useState } from 'react';
+import { hot } from 'react-hot-loader';
 
-const Warning = React.lazy(() => import("./Warning"));
+const Warning = React.lazy(() => import('./Warning'));
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <h1>Hello world!!</h1>
-      <h2 className={count > 5 ? "warning" : null}>Count {count}</h2>
+      <h2 className={count > 5 ? 'warning' : null}>Count {count}</h2>
       <button onClick={() => setCount((count) => count + 1)}>+</button>
       <button onClick={() => setCount((count) => count - 1)}>-</button>
       {count > 5 ? (
